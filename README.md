@@ -1,4 +1,4 @@
-# SSR News - React
+# SSR SpaceX Launch Program - React
 
 React Server Side Rendering demo project. This project uses to show Space x launch program data.
 
