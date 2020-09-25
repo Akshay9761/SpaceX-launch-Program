@@ -1,0 +1,107 @@
+.spaceXCard_card {
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #FFFFFF;
+  -webkit-transition: -webkit-box-shadow 0.25s;
+  transition: -webkit-box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+  height: 480px;
+
+  .spaceXCard_card-image {
+    background-color: #F2F3F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    width: 100%;
+    img {
+      width: inherit;
+    }
+  }
+  .spaceXCard_card-content {
+    font-size: 14px;
+    margin-top: 1rem;
+    .spaceXCard_card-content_name {
+      color: #475092;
+      font-weight: bold;
+    }
+    .spaceXCard_card-content_heading {
+      color: #0F0F0F;
+      font-weight: bold;
+      .spaceXCard_card-content_value {
+        color: #4D537C;
+        font-weight: 100;
+      }
+    }
+    .spaceXCard_card-content_landing,
+    .spaceXCard_card-content_launch {
+      color: #0F0F0F;
+      font-weight: bold;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .spaceXCard_card-content_value {
+        color: #4D537C;
+        font-weight: 100;
+        margin-left: 2px;
+      }
+    }
+    .spaceXCard_card-content_mission {
+      color: #0F0F0F;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      .spaceXCard_card-content_value {
+        color: #4D537C;
+        font-weight: 100;
+        // margin-left: 2px;
+        margin-left: -1.5rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .spaceXCard_card-image {
+    width: 100%;
+  }
+  .spaceXCard_card-content {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .spaceXCard_card {
+    height: 500px;
+    .spaceXCard_card-content {
+      font-size: 12px;
+    }
+    .spaceXCard_card-image {
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .spaceXCard_card {
+    height: 650px;
+  }
+}
+
+@media (max-width: 360px) {
+  .spaceXCard_card {
+    height: 600px;
+  }
+}
+
+@media (max-width: 320px) {
+  .spaceXCard_card {
+    height: 550px;
+  }
+}

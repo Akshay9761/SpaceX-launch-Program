@@ -1,0 +1,55 @@
+.position-filter {
+  position: sticky;
+  top: 0px;
+  height: 660px;
+  overflow: scroll;
+  .filters-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: -webkit-box-shadow 0.25s;
+    transition: -webkit-box-shadow 0.25s;
+    transition: box-shadow 0.25s;
+    transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    .filters-heading {
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    .filter-name-conatiner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .heading {
+        width: 150px;
+        border-bottom: 2px solid #CBC9C8;
+        text-align: center;
+      }
+    }
+    .chips-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .chips-des {
+        background-color: #C5E09B;
+        padding: 2px 5px;
+        color: black;
+        text-align: center;
+        cursor: pointer;
+        width: 75px;
+        border-radius: 5px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .position-filter {
+    height: auto;
+    overflow: hidden;
+  }
+}
