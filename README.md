@@ -1,35 +1,24 @@
 # SSR News - React
 
-React Server Side Rendering demo project. This project uses [News API](https://newsapi.org/) under the hood.
+React Server Side Rendering demo project. This project uses to show Space x launch program data.
 
-Demo: [Click to see DEMO](https://react-ssr-ilker.herokuapp.com/)
+Demo: [Click to see DEMO](https://new-spacex-launch.herokuapp.com/)
 
-![SSR News](https://i.imgur.com/F3AT7v0.jpg)
 
 ## Getting Started
 
 This project created for a Meetup talk about Server Side Rendering with React.
-
-There is also a SPA version of same project.
-
-- [Visit Repo](https://github.com/ilkeraltin/react-spa-news)
-- [Click to see DEMO](https://react-spa-ilker.herokuapp.com/)
 
 ### Installing
 
 First clone project and install dependencies
 
 ```sh
-$ mkdir react-news && cd react-news
-$ git clone https://github.com/ilkeraltin/react-ssr-news.git
-$ cd react-ssr-news
+$ mkdir react-spacex-launch-program && cd react-spacex-launch-program
+$ git clone https://github.com/Akshay9761/SpaceX-launch-Program.git
+$ cd react-spacex-launch-program
 $ npm install
 ```
-
-
-Navigate to [News API](https://newsapi.org/) and grab your API key.
-
-Find config.js in root folder and update API Key.
 
 Run on local
 
