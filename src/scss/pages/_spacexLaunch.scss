@@ -13,5 +13,16 @@
       position: relative;
       margin-bottom: .5rem;
     }
+    .developed-by {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 15px;
+      p {
+        padding: 25px;
+        margin-bottom: 0.5rem;
+      }
+    }
   }
 }

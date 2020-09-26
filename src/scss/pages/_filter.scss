@@ -2,7 +2,6 @@
   position: sticky;
   top: 0px;
   height: 660px;
-  overflow: scroll;
   .filters-section {
     background-color: #ffffff;
     border-radius: 10px;
@@ -50,6 +49,5 @@
 @media (max-width: 700px) {
   .position-filter {
     height: auto;
-    overflow: hidden;
   }
 }

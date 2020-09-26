@@ -102,6 +102,9 @@ const HomePage = props => {
             }
           </div>
         </div>
+        <div className="col-sm-12 developed-by">
+          <p>Developed by: Akshay Srivastava</p>
+        </div>
       </div>
     </div>
   );

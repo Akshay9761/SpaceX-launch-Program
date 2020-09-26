@@ -9,7 +9,7 @@ function YearFilter({
     <div className="container">
       <div className="row">
         <div className="col-12 filter-name-conatiner">
-          <p className="heading">Lauch Year{yearFilter}</p></div>
+          <p className="heading">Lauch Year</p></div>
         {
           Years.map(year => {
             return (
