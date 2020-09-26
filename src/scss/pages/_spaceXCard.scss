@@ -19,8 +19,12 @@
     align-items: center;
     vertical-align: middle;
     width: 100%;
-    img {
+    .found-img {
       width: inherit;
+    }
+    .not-found-img {
+      width: inherit;
+      max-width: 256px;
     }
   }
   .spaceXCard_card-content {
@@ -48,7 +52,7 @@
       .spaceXCard_card-content_value {
         color: #475092;
         font-weight: 300;
-        margin-left: 2px;
+        margin-left: 5px;
       }
     }
     .spaceXCard_card-content_mission {
@@ -67,20 +71,28 @@
 
 
 @media (max-width: 1024px) and (min-width: 768px) {
-  .spaceXCard_card-image {
-    width: 100%;
-  }
-  .spaceXCard_card-content {
-    font-size: 12px;
+  .spaceXCard_card {
+    height: 460px;
+    .spaceXCard_card-image {
+      width: 100%;
+    }
+    .spaceXCard_card-content {
+      font-size: 12px;
+    }
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .spaceXCard_card {
     height: 530px;
     .spaceXCard_card-content {
       font-size: 12px;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .spaceXCard_card {
     .spaceXCard_card-image {
       width: auto;
     }

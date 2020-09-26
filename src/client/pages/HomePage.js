@@ -37,10 +37,6 @@ const HomePage = props => {
     );
   };
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   const spaceXData = useMemo(() => {
     return data;
   }, [data, yearfilter, launchFilter, landingFilter])
@@ -68,6 +64,7 @@ const HomePage = props => {
   }, [yearfilter, launchFilter, landingFilter])
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     let filterData = getFiterData();
     const { year, launch, landing } = filterData;
     if (year && parseInt(year) && yearfilter) {
@@ -97,7 +94,9 @@ const HomePage = props => {
             {
               spaceXData.map(spacex => {
                 return (
-                  <div key={spacex.flight_number} className="col-12 col-md-6 col-lg-3"><SpaceXCard spacex={spacex} /></div>
+                  <div key={spacex.flight_number} className="col-12 col-md-6 col-lg-3">
+                    <SpaceXCard spacex={spacex} />
+                  </div>
                 )
               })
             }
