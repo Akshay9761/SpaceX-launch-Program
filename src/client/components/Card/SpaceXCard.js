@@ -29,14 +29,15 @@ function SpaceXCard({ spacex }) {
         <p className="spaceXCard_card-content_heading">Launch Year: <span className="spaceXCard_card-content_value">{spacex.launch_year}</span></p>
         <p className="spaceXCard_card-content_landing">Successful<br />Launch:
           <span className="spaceXCard_card-content_value">
-            {(spacex.launch_success === true || spacex.launch_success === false) ? 
-            spacex.launch_success.toString() : 'Not found'}
+            {JSON.stringify(spacex.launch_success)}
           </span>
         </p>
         <p className="spaceXCard_card-content_launch">Successful<br />Landing:
           <span className="spaceXCard_card-content_value">
-            {(spacex.launch_landing === true || spacex.launch_landing === false) ?
-              spacex.launch_landing.toString() : 'Not found'}
+            {spacex.rocket.first_stage && spacex.rocket.first_stage.cores && 
+              spacex.rocket.first_stage.cores.length && spacex.rocket.first_stage.cores[0] &&
+              JSON.stringify(spacex.rocket.first_stage.cores[0].land_success)
+            }
           </span>
         </p>
       </div>
