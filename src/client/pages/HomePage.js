@@ -146,9 +146,11 @@ HomePage.defaultProps = {
   setYearFilter: null
 };
 
+const HomePageMemo = React.memo(HomePage)
+
 export default {
   component: connect(
     mapStateToProps,
     mapDispatchToProps
-  )(HomePage)
+  )(HomePageMemo)
 };
