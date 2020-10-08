@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import YearFilter from './YearFilter';
 import SucFulLaunchFilter from './SucFulLaunchFilter';
 import SucFulLandingFilter from './SucFulLandingFilter';
@@ -103,4 +103,6 @@ const mapDispatchToProps = {
   setYearFilter
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Filters);
+const MemoFilter = React.memo(Filters)
+
+export default connect(mapStateToProps, mapDispatchToProps)(MemoFilter);

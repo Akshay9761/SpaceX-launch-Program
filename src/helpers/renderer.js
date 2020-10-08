@@ -31,7 +31,7 @@ export default (req, store, context) => {
                       '\\u003c'
                     )}
                 </script>
-                <script src="/bundle.js"></script>
+                <script defer src="/bundle.js"></script>
             </body>
     </html>`;
 };

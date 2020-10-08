@@ -7,8 +7,8 @@ function SpaceXCard({ spacex }) {
       <div className="spaceXCard_card-image">
         {
           spacex.links && spacex.links.mission_patch_small ?
-            <LazyLoadImage className="found-img" src={spacex.links.mission_patch_small} />
-            : <LazyLoadImage className='not-found-img' src="https://cdn.browshot.com/static/images/not-found.png" />
+            <LazyLoadImage className="found-img" src={spacex.links.mission_patch_small} alt={spacex.mission_name} />
+            : <LazyLoadImage className='not-found-img' src="https://cdn.browshot.com/static/images/not-found.png" alt={'Not Found Image'} />
         }
       </div>
       <div className="spaceXCard_card-content">
