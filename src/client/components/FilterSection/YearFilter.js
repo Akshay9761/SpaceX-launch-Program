@@ -14,12 +14,12 @@ function YearFilter({
           Years.map(year => {
             return (
               <div key={year} className="col-6 col-md-6 chips-container">
-                <p className="chips-des"
+                <button className="chips-des"
                   style={yearFilter === year ? {backgroundColor: '#7DB90E'} : null}
                   onClick={() => handleYearFilter(year)}
                 >
                   {year}
-                </p>
+                </button>
               </div>
             )
           })

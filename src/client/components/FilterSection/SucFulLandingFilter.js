@@ -14,12 +14,12 @@ function SucFulLandingFilter({
           Successful_Landing.map(landing => {
             return (
               <div key={landing.landing} className="col-6 col-md-6 chips-container">
-                <p className="chips-des"
+                <button className="chips-des"
                   style={landingFilter === landing.landing ? {backgroundColor: '#7DB90E'} : null}
                   onClick={() => handleLandingFilter(landing.landing)}
                 >
                   {landing.landing.toString()}
-                </p>
+                </button>
               </div>
             )
           })

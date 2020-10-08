@@ -25,13 +25,13 @@ function Filters({
   function formQueryParams ({year, landing, launch}) {
     let queryParams = '';
     if (year) {
-      queryParams += `&year=${year}` 
+      year !== yearFilter ? queryParams += `&year=${year}` : queryParams += '' 
     }
     if ((launch === true || launch === false) || (launch === 'true' || launch === 'false')) {
-      queryParams += `&launch=${launch}` 
+      launch !== launchFilter ? queryParams += `&launch=${launch}` : queryParams += ''
     }
     if ((landing === true || landing === false) || (landing === 'true' || landing === 'false')) {
-      queryParams += `&landing=${landing}` 
+      landing !== landingFilter ? queryParams += `&landing=${landing}` : queryParams += ''
     }
     return queryParams;
   }
@@ -45,7 +45,8 @@ function Filters({
   }
 
   const handleYearFilter = (year) => {
-    setYearFilter(year);
+    if (year !== yearFilter) setYearFilter(year);
+    else setYearFilter(null)
     let filterData = getFiterData();
     filterData.year = year;
     history.push({
@@ -55,7 +56,8 @@ function Filters({
   }
 
   const handleLaunchFilter = (launch) => {
-    setLaunchFilter(launch)
+    if (launch !== launchFilter) setLaunchFilter(launch)
+    else setLaunchFilter(null)
     let filterData = getFiterData();
     filterData.launch = launch;
     history.push({
@@ -65,7 +67,8 @@ function Filters({
   }
 
   const handleLandingFilter = (landing) => {
-    setLandingFilter(landing)
+    if (landing !== landingFilter) setLandingFilter(landing)
+    else setLandingFilter(null)
     let filterData = getFiterData();
     filterData.landing = landing;
     history.push({

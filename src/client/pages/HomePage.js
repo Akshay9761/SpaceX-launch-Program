@@ -74,7 +74,7 @@ const HomePage = props => {
     } else if ((landing === true || landing === false) && landingFilter) {
       fetchSpaceXWithFilter(parseInt(year), launch, landing);
     } else {
-      if (data && data.length === 0 && !year && !launch && !landing) fetchAllSpaceX()
+      if (!year && !launch && !landing) fetchAllSpaceX()
     }
   }, [yearfilter, launchFilter, landingFilter])
 

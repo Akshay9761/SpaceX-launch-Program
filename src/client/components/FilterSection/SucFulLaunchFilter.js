@@ -14,12 +14,12 @@ function SucFulLaunchFilter({
           Successful_Launch.map(launch => {
             return (
               <div key={launch.launch} className="col-6 col-md-6 chips-container">
-                <p className="chips-des"
+                <button className="chips-des"
                   style={launchFilter === launch.launch ? {backgroundColor: '#7DB90E'} : null}
                   onClick={() => handleLaunchFilter(launch.launch)}
                 >
                   {launch.launch.toString()}
-                </p>
+                </button>
               </div>
             )
           })

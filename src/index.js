@@ -37,7 +37,8 @@ app.get('*', (req, res) => {
   // Checks the given path, matches with component and returns array of items about to be rendered
   const routes = matchRoutes(Routes, req.path);
 
-  // Execute all loadData functions inside given urls and wrap promises with new promises to be able to render pages all the time
+  // Execute all loadData functions inside given urls and wrap promises with new promises 
+  // to be able to render pages all the time
   // Even if we get an error while loading data, we will still attempt to render page.
   const promises = routes
     .map(({ route }) => {
